@@ -18,42 +18,65 @@ form * {
 /* Иконки социальных сетей решил вывести через шрифт, наверно правильнее через картинки */
 
 .futured__item__stars {
-    font-family:"Font Awesome\ 5 Free";
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;  
-    font-size: 16px;
+    height: 16px;
+    width: 80px;   
 }
 
+.futured__item__stars div {
+    display: flex;
+    justify-content: center;
+}
+
+span.star_left,
+span.star_right {
+    display: block;
+    align-self: center;
+    height: 16px;
+    background-repeat: repeat-x;
+}
+
+span.star_left {
+    background-image: url("../img/star_fill.png");
+}
+
+span.star_right {
+    background-image: url("../img/star_contur.png");
+}
+
+
+
+star_fill {
+    background-image: url("../img/star_fill.png")
+}
+
+star_contur {
+    background-image: url("../img/star_contur.png")
+}
 
 .fa-icons {
-    font-family:"FontAwesome";
+    font-family: "FontAwesome";
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
-    line-height: 1;   
+    line-height: 1;
 }
 
-.fa-facebook:before  {
+.fa-facebook:before {
     content: "\f09a";
 }
 
-.fa-twitter:before  {
+.fa-twitter:before {
     content: "\f099";
 }
 
-.fa-linkedin-in:before  {
+.fa-linkedin-in:before {
     content: "\f0e1";
 }
 
-.fa-pinterest:before  {
+.fa-pinterest:before {
     content: "\f231";
 }
 
@@ -61,60 +84,49 @@ form * {
     content: "\f0d5";
 }
 
-.fa-star:before  {
-    content: "\f005";    
+.futured__item__star5 .star_left {
+    width: 80px;
+}
+.futured__item__star5 .star_right {
+    width: 0px;
 }
 
-.fa-star5:before {
-    content: "\f005\f005\f005\f005\f005";
-    font-weight: 900;
+.futured__item__star4 .star_left {
+    width: 64px;
+}
+.futured__item__star4 .star_right {
+    width: 16px;
 }
 
-.fa-star4:before {
-    content: "\f005\f005\f005\f005";
-    font-weight: 900;
+.futured__item__star3 .star_left {
+    width: 48px;
+}
+.futured__item__star3 .star_right {
+    width: 32px;
 }
 
-.fa-star4:after {
-    content: "\f005";
-    font-weight: 300;
+.futured__item__star2 .star_left {
+    width: 32px;
+}
+.futured__item__star2 .star_right {
+    width: 48px;
+}
+.futured__item__star1 .star_left {
+    width: 16px;
+}
+.futured__item__star1 .star_right {
+    width: 64px;
 }
 
-.fa-star3:before {
-    content: "\f005\f005\f005";
-    font-weight: 900;
-}
 
-.fa-star3:after {
-    content: "\f005\f005";
-    font-weight: 300;
-}
-
-.fa-star2:before {
-    content: "\f005\f005";
-    font-weight: 900;
-}
-
-.fa-star2:after {
-    content: "\f005\f005\f005";
-    font-weight: 300;
-}
-
-.fa-star1:before {
-    content: "\f005";
-    font-weight: 900;
-}
-
-.fa-star1:after {
-    content: "\f005\f005\f005\f005";
-    font-weight: 300;
-}
 
 input::placeholder {
     color: #a4a4a4;
 }
 
-.specials span, .promo span, .logo span {
+.specials span,
+.promo span,
+.logo span {
     color: #f16d7f;
 }
 
@@ -169,7 +181,7 @@ input::placeholder {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100px;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.17);
     border: 1px solid rgba(236, 236, 236, 1);
@@ -207,11 +219,11 @@ input::placeholder {
 }
 
 .header__form__browse:hover {
-    background-image: linear-gradient(to bottom, #f3f3f3 0%, #f0f0f0 100%);    
+    background-image: linear-gradient(to bottom, #f3f3f3 0%, #f0f0f0 100%);
 }
 
 .header__form__browse:active {
-    background-image: linear-gradient(to bottom, #e6e6e6 0%, #e3e3e3 100%);    
+    background-image: linear-gradient(to bottom, #e6e6e6 0%, #e3e3e3 100%);
 }
 
 .header__form__browse::after {
@@ -249,7 +261,7 @@ input::placeholder {
 
 .header__form button:hover {
     background-color: #f9f9f9;
-    
+
 }
 
 
@@ -460,8 +472,7 @@ input::placeholder {
     margin: 0px 12px;
 }
 
-.futured__item__name {
-}
+.futured__item__name {}
 
 .futured__item__link {
     display: block;
@@ -752,7 +763,7 @@ a.active_nav_slider:hover {
     border-style: none;
     background-color: #f16d7f;
     color: #ffffff;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .subscribe__right__form button:hover {
