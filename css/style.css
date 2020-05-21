@@ -485,7 +485,8 @@ h5 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; border: 1px solid #eaeaea;
+    flex-wrap: wrap;
+    border: 1px solid #eaeaea;
     background-color: #ffffff;
     margin-bottom: 10px;
     color: #4a4a4a;
@@ -2128,4 +2129,13 @@ select.select_color {
     font-weight: 900;
     text-transform: uppercase;
     padding: 20px 0px 10px 0px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
