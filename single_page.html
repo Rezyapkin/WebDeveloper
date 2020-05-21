@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Moschino Cheap And Chic</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <script src="https://kit.fontawesome.com/afdc7aa636.js" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/afdc7aa636.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -100,7 +100,7 @@
 
             <nav class="center">
                 <ul class="menu dropdown">
-                    <li class="menu__list"><a href="index.html" class="menu__link menu__link__href menu__link__active">Home</a></li>
+                    <li class="menu__list"><a href="index.html" class="menu__link menu__link__href">Home</a></li>
                     <li class="menu__list drop"><a href="#" class="menu__link">Man</a>
                         <div class="dropdown__menu dropdown__main_menu">
                             <div class="dropdowm__column">
@@ -386,67 +386,97 @@
 
                 </ul>
             </nav>
-            <section class="promo center">
-                <div class="promo__text">
-                    <h1>THE BRAND</h1>
-                    <h2>OF LUXERIOUS <span>FASHION</span></h2>
+            <div class="breadcrumb center">
+                <h1>New Arrivals</h1>
+                <nav class="breadcrumb__links">
+                    <a href="#">Home</a>
+                    <span class="breadcrumb__separator">/</span>
+                    <a href="#">Men</a>
+                    <span class="breadcrumb__separator">/</span>
+                    <div class="breadcrumb__current">New arrivals</div>
+                </nav>
+            </div>
+            <main class="product_container">
+                <div class="product_slider">
+                    <div class="product_slider__slide" style="background-image: url(img/product_photo.jpg)">
+                        <img src="img/product_photo.jpg" class="produc_silder__image" alt="Moschino Cheap And Chic">
+                    </div>
+                    <a hfer="#" class="product_slider__pagination"></a>
+                    <a hfer="#" class="product_slider__pagination"></a>
                 </div>
-            </section>
-            <section class="specials center">
-                <div class="specials__left">
-                    <div class="specials__item">
-                        <div class="spesials__bage">Hot deal
-                            <span>FOR MEN</span></div>
-                    </div>
-                    <div class="specials__item">
-                        <div class="spesials__bage">LUXIROUS & trendy
-                            <span>ACCESORIES</span></div>
+                <div class="center">
+                    <div class="product_description">
+                        <span class="product_description__collection">WOMEN COLLECTION</span>
+                        <strong class="product_name">Moschino Cheap And Chic</strong>
+                        <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                        <ul class="product__specifications">
+                            <li><span>MATERIAL:</span> COTTON</li>
+                            <li><span>DESIGNER:</span> BINBURHAN</li>
+                        </ul>
+                        <div class="product_price">$561</div>
+                        <hr>
+                        <form action="#" class="product__add_to_cart_form">
+                            <div class="product__add_to_cart_form__grow_1">
+                                <label for="product_color">CHOOSE COLOR</label>
+                                <select class="select_color" name="product_color" id="product_color">
+                                    <option value="Red">Red</option>
+                                    <option value="Green">Green</option>
+                                    <option value="Blue">Blue</option>
+                                </select>
+                            </div>
+                            <div class="product__add_to_cart_form__grow_1">
+                                <label for="product_size">CHOOSE SIZE</label>
+                                <select name="product_size" id="product_size">
+                                    <option value="XXS">XXS</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </div>
+                            <div class="product__add_to_cart_form__grow_1">
+                                <label for="product_quantity">QUANTITY</label>
+                                <input required value="1" min="1" type="number" id="product_quantity">
+                            </div>
+                            <button type="submit" class="gray_frame_button red_button">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
-                <div class="specials__right">
-                    <div class="specials__item">
-                        <div class="spesials__bage">30% offer
-                            <span>women</span></div>
-                    </div>
-                    <div class="specials__item">
-                        <div class="spesials__bage">New arrivals
-                            <span>for kids</span></div>
-                    </div>
-                </div>
-            </section>
-            <section class="futured center">
-                <h3>Fetured Items</h3>
-                <p>Shop for items based on what we featured in this week</p>
+            </main>
+            <section class="recomended_products center">
+                <h3>You may like also</h3>
                 <div class="products">
 
                     <div class="product">
-                        <a href="single_page.html" class="product__link">
-                            <img class="product__img" src="img/fetured_1.jpg" alt="Mango people t-shirt">
+                        <a href="#" class="product__link">
+                            <img class="product__img" src="img/recomended_product_1.jpg" alt="Mango people t-shirt">
                         </a>
                         <div class="product__button_container">
                             <a href="#" class="product__button"><img src="img/add_to_cart.png">Add to Cart</a>
                         </div>
                         <div class="product__description">
                             <div class="product__name">
-                                <a href="single_page.html" class="product__link">Mango people t-shirt</a>
+                                <a href="#" class="product__link">BLAZE LEGGINGS</a>
                             </div>
                             <div class="product__price">
                                 <div>$52.00</div>
-                                <div class="rating_container rating_4"></div>
+                                <div class="rating_container rating_5"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="product">
-                        <a href="single_page.html" class="product__link">
-                            <img class="product__img" src="img/fetured_2.jpg" alt="Mango people t-shirt">
+                        <a href="#" class="product__link">
+                            <img class="product__img" src="img/recomended_product_2.jpg" alt="Mango people t-shirt">
                         </a>
                         <div class="product__button_container">
                             <a href="#" class="product__button"><img src="img/add_to_cart.png">Add to Cart</a>
                         </div>
                         <div class="product__description">
                             <div class="product__name">
-                                <a href="single_page.html" class="product__link">Mango people t-shirt</a>
+                                <a href="#" class="product__link">ALEXA SWEATER</a>
                             </div>
                             <div class="product__price">
                                 <div>$52.00</div>
@@ -456,15 +486,15 @@
                     </div>
 
                     <div class="product">
-                        <a href="single_page.html" class="product__link">
-                            <img class="product__img" src="img/fetured_3.jpg" alt="Mango people t-shirt">
+                        <a href="#" class="product__link">
+                            <img class="product__img" src="img/recomended_product_3.jpg" alt="Mango people t-shirt">
                         </a>
                         <div class="product__button_container">
                             <a href="#" class="product__button"><img src="img/add_to_cart.png">Add to Cart</a>
                         </div>
                         <div class="product__description">
                             <div class="product__name">
-                                <a href="single_page.html" class="product__link">Mango people t-shirt</a>
+                                <a href="#" class="product__link">AGNES TOP</a>
                             </div>
                             <div class="product__price">
                                 <div>$52.00</div>
@@ -474,119 +504,25 @@
                     </div>
 
                     <div class="product">
-                        <a href="single_page.html" class="product__link">
-                            <img class="product__img" src="img/fetured_4.jpg" alt="Mango people t-shirt">
+                        <a href="#" class="product__link">
+                            <img class="product__img" src="img/recomended_product_4.jpg" alt="Mango people t-shirt">
                         </a>
                         <div class="product__button_container">
                             <a href="#" class="product__button"><img src="img/add_to_cart.png">Add to Cart</a>
                         </div>
                         <div class="product__description">
                             <div class="product__name">
-                                <a href="single_page.html" class="product__link">Mango people t-shirt</a>
+                                <a href="#" class="product__link">SYLVA SWEATER</a>
                             </div>
                             <div class="product__price">
                                 <div>$52.00</div>
-                                <div class="rating_container rating_3_5"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product">
-                        <a href="single_page.html" class="product__link">
-                            <img class="product__img" src="img/fetured_5.jpg" alt="Mango people t-shirt">
-                        </a>
-                        <div class="product__button_container">
-                            <a href="#" class="product__button"><img src="img/add_to_cart.png">Add to Cart</a>
-                        </div>
-                        <div class="product__description">
-                            <div class="product__name">
-                                <a href="single_page.html" class="product__link">Mango people t-shirt</a>
-                            </div>
-                            <div class="product__price">
-                                <div>$52.00</div>
-                                <div class="rating_container rating_3"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product">
-                        <a href="single_page.html" class="product__link">
-                            <img class="product__img" src="img/fetured_6.jpg" alt="Mango people t-shirt">
-                        </a>
-                        <div class="product__button_container">
-                            <a href="#" class="product__button"><img src="img/add_to_cart.png">Add to Cart</a>
-                        </div>
-                        <div class="product__description">
-                            <div class="product__name">
-                                <a href="single_page.html" class="product__link">Mango people t-shirt</a>
-                            </div>
-                            <div class="product__price">
-                                <div>$52.00</div>
-                                <div class="rating_container rating_2_5"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product">
-                        <a href="single_page.html" class="product__link">
-                            <img class="product__img" src="img/fetured_7.jpg" alt="Mango people t-shirt">
-                        </a>
-                        <div class="product__button_container">
-                            <a href="#" class="product__button"><img src="img/add_to_cart.png">Add to Cart</a>
-                        </div>
-                        <div class="product__description">
-                            <div class="product__name">
-                                <a href="single_page.html" class="product__link">Mango people t-shirt</a>
-                            </div>
-                            <div class="product__price">
-                                <div>$52.00</div>
-                                <div class="rating_container rating_2"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product">
-                        <a href="single_page.html" class="product__link">
-                            <img class="product__img" src="img/fetured_8.jpg" alt="Mango people t-shirt">
-                        </a>
-                        <div class="product__button_container">
-                            <a href="#" class="product__button"><img src="img/add_to_cart.png">Add to Cart</a>
-                        </div>
-                        <div class="product__description">
-                            <div class="product__name">
-                                <a href="single_page.html" class="product__link">Mango people t-shirt</a>
-                            </div>
-                            <div class="product__price">
-                                <div>$52.00</div>
-                                <div class="rating_container rating_1_5"></div>
+                                <div class="rating_container rating_5"></div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <a class="button futured__button" style="width: 212px; height: 48px" href="product.html">Browse All Product<img src="img/arrow.png"></a>
-            </section>
-            <section class="special_offer center">
-                <div class="special_offer__container">
-                    <img src="img/30off.jpg" alt="30% offer for women" class="special_offer__banner">
-                    <div class="special_offer__info">
-                        <div class="special_offer__item">
-                            <img class="special_offer__item__img" src="img/free_delivery.png" alt="Free Delivery">
-                            <h4>Free Delivery</h4>
-                            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                        </div>
-                        <div class="special_offer__item">
-                            <img class="special_offer__item__img" src="img/sales_discounts.png" alt="Sales & discounts">
-                            <h4>Sales &amp; discounts</h4>
-                            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                        </div>
-                        <div class="special_offer__item">
-                            <img class="special_offer__item__img" src="img/quality_assurance.png" alt="Quality assurance">
-                            <h4>Quality assurance</h4>
-                            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                        </div>
-                    </div>
-                </div>
+
             </section>
             <section class="subscribe">
                 <div class="subscribe__container center">
@@ -666,7 +602,7 @@
             </section>
         </div>
         <footer class="footer center">
-            <div class="footer__left">&copy; 220 Brand All Rights Reserved.</div>
+            <div class="footer__left">&copy; 2020 Brand All Rights Reserved.</div>
             <div class="footer__right">
                 <ul class="footer__socials">
                     <li><a href="#" class="footer__socials__link"><span class="fab fa-facebook-f"></span></a></li>
